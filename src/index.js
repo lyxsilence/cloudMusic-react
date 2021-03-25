@@ -2,13 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from 'react-redux';
+import store from './redux/store.js';
 
-import Home from "./home"
-
+import Layout from "./container/Layout/Layout";
 ReactDOM.render(
     <React.StrictMode>
-		<Home></Home>
-	</React.StrictMode>,
+        <Provider store={store}>
+            {/* <AudioTest /> */}
+            {/* <Test /> */}
+            <Layout />
+        </Provider>
+    </React.StrictMode>,
     document.getElementById("root")
 );
 

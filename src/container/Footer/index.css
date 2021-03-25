@@ -1,0 +1,30 @@
+.footer{
+    position: relative;
+    min-width: 1120px;
+    height: 172px;
+    border-top: 1px solid #d3d3d3;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+.footer-container{
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container-left{
+    width: 520px;
+    padding-top: 15px;
+    line-height: 24px;
+    font-size: 12px;
+}
+.container-right{
+    width: 420px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-right li{
+    width: 60px;
+    height: 70px;
+}
