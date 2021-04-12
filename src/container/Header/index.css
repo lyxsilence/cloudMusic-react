@@ -1,0 +1,129 @@
+.header{
+    position: relative;
+    z-index: 1000;
+    height: 70px;
+    box-sizing: border-box;
+    background: #242424;
+    border-bottom: 1px solid #000;
+}
+.search_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    color: #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.icon_search {
+    padding: 0 10px;
+    width: 16px;
+    height: 16px;
+    color: #000;
+    background: url('../../../src/images/search.svg');
+}
+.input_search {
+    flex: 1;
+    text-align: left;
+    border: none;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    width: 140px;
+}
+.nav_list_item{
+    padding: 0 20px;
+    color: #ccc;
+    position: relative;
+    font-size: 14px;
+  }
+  .nav_list_item:hover, .isHot{
+    color: #fff;
+  }
+  .item_hot{
+    width: 28px;
+    height: 23px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+  }
+  .itemLink{
+    cursor: pointer;
+  }
+
+  .icon_search{
+    width: 13px;
+    height: 13px;
+    padding: 0 10px;
+  }
+  .input_search{
+    flex: 1;
+    text-align: left;
+    border: none;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    width: 140px;
+  }
+  .input_search::after{
+    outline: none;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 15px;
+  }
+  .logo{
+    width: 177px;
+    height: 69px;
+    float: left;
+    background-position: 0 0;
+    background-image: url('https://s2.music.126.net/style/web2/img/frame/topbar.png?fa108e4cf72934af3f8220b81d8cccf6');
+    cursor: pointer;
+  }
+  .nav_list{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 30px;
+    align-items: center;
+  }
+  .nav_list:nth-child(2){
+    margin-left: 20px;
+  }
+  .create{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: #ccc;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+  .create:hover{
+    color: #fff;
+  }
+  .btn_logoIn{
+    color: #ccc;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .btn_logoIn:focus{
+    outline: none;
+  }
+  .btn_logoIn:hover{
+    color: #fff;
+  }
+  
+  .item_current{
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    border: 10px solid #C20C0C;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid transparent;
+    transform: translateX(-50%);
+  }
