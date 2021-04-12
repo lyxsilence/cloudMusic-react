@@ -1,6 +1,9 @@
-import {
+import { 
     TWO_LEVEL_ROUTE_CHANGE,
-    TOGGLE_SHOW_LOGIN_BOX
+    TOGGLE_SHOW_LOGIN_BOX,
+    SET_LOGIN_STATUS_ACT,
+    SET_COOKIE_ACT,
+    SET_PROFILE_ACT
 } from "./constants";
 
 const initRoutes = {
@@ -23,7 +26,6 @@ const initRoutes = {
 export const routes = (state = initRoutes, action) => {
     switch (action.type) {
         case TWO_LEVEL_ROUTE_CHANGE:
-            console.log(action, "action");
             let id = action.id;
             let twoList = state.twoLevel;
             twoList.forEach((item) => {
@@ -51,11 +53,15 @@ const initUser = {
     cookie: "",
 };
 export const userInfo = (state = initUser, action) => {
-    console.log(action, 'action');
     switch (action.type) {
         case TOGGLE_SHOW_LOGIN_BOX:
-            console.log("toggleShowLoginBox action");
             return { ...state, isShowLoginBox: !state.isShowLoginBox };
+        case SET_LOGIN_STATUS_ACT:
+            return { ...state, isLogin: action.payload };
+        case SET_COOKIE_ACT:
+            return { ...state, cookie: action.payload };
+        case SET_PROFILE_ACT:
+            return { ...state, profile: action.payload };
         default:
             return state;
     }

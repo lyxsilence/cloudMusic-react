@@ -1,11 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import {
-    routes
+    routes,
+    userInfo
 } from "./reducer";
 import thunkMiddleware from "redux-thunk";
 
-let reducer = combineReducers(routes);
+let reducer = combineReducers({routes, userInfo});
 
 let middleWare = [thunkMiddleware];
 

@@ -1,3 +1,6 @@
 export const ONE_LEVEL_ROUTE_CHANGE = "ONE_LEVEL_ROUTE_CHANGE"; // 一级route改变
 export const TWO_LEVEL_ROUTE_CHANGE = "TWO_LEVEL_ROUTE_CHANGE"; // 二级route改变
 export const TOGGLE_SHOW_LOGIN_BOX = "TOGGLE_SHOW_LOGIN_BOX"; // 显示隐藏登录框
+export const SET_LOGIN_STATUS_ACT = "SET_LOGIN_STATUS_ACT";
+export const SET_COOKIE_ACT = "SET_COOKIE_ACT";
+export const SET_PROFILE_ACT = "SET_PROFILE_ACT";
