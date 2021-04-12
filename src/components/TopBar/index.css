@@ -1,0 +1,24 @@
+.disHeader {
+    padding-left: 275px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #C20C0C; */
+}
+.disItem {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 0;
+    cursor: pointer;
+    position: relative;
+}
+.disItem_text {
+    padding: 2px 11px;
+}
+.disItem_text:hover,
+.isOn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    text-align: center;
+}

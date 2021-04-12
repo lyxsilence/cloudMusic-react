@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import './index.css';
 
 const Footer = (props) => {
-    console.log(props);
     return (
         <div className='footer'>
             <div className='footer-container'>

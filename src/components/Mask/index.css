@@ -1,0 +1,136 @@
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.container {
+    width: 530px;
+    height: 310px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 300px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    overflow: hidden;
+    /* border: 1px solid #ececec; */
+}
+.mTop {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+.title {
+    color: #ffffff;
+}
+.mCenter {
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cTop {
+    width: 100%;
+}
+.close_icon {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.inputItem {
+    background-color: rgba(232, 240, 252, 1);
+    border: 1px solid rgba(205, 205, 205, 1);
+    height: 35px;
+}
+.dropdown {
+    background-color: #fff;
+    width: 44px;
+    height: 100%;
+    border: none;
+    border-right: 1px solid #bbb;
+}
+
+.inputItem input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 6px;
+}
+.inputItem {
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.inputItem + .inputItem {
+    margin-top: 10px;
+}
+.cCenter {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #666666;
+    margin: 8px 0 15px 0;
+}
+.cCenterCon {
+    width: 100%;
+}
+.radio {
+    flex: 1;
+}
+.label-link {
+    cursor: pointer;
+}
+.label-link:hover {
+    text-decoration: underline;
+}
+.cBottom {
+    width: 100%;
+    background-image: linear-gradient(
+        180deg,
+        rgba(65, 143, 217, 1),
+        rgba(29, 110, 190, 1)
+    );
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 3px 0;
+}
+.cBottom:active {
+    opacity: 0.8;
+}
+.mFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #666666;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(247, 247, 247, 0.4);
+    line-height: 55px;
+    font-size: 10px;
+    padding: 0 6px;
+}
+.fLeft {
+    color: rgba(67, 146, 219, 1);
+    cursor: pointer;
+}
+.fRight {
+    cursor: pointer;
+    color: #666666;
+}

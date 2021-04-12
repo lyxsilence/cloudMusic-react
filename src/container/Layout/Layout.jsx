@@ -5,19 +5,21 @@ import { connect } from 'react-redux';
 // html
 import Header from '../Header';
 import Footer from '../Footer';
-const Layout = () =>{
+import Mask from "../../../src/components/Mask";
+const Layout = (isShowLoginBox) =>{
     return (
         <Router>
             <Header></Header>
 
             <Footer></Footer>
+            {isShowLoginBox ? <Mask /> : null}
         </Router>
     )
 }
 
-// const mapPropsToStates = (state) => {
-//     return {
-//       isShowLoginBox: state.userinfo.isShowLoginBox,
-//     };
-//   };
-export default connect()(Layout);
+const mapPropsToStates = (state) => {
+    return {
+      isShowLoginBox: state.userInfo.isShowLoginBox,
+    };
+  };
+export default connect(mapPropsToStates)(Layout);
