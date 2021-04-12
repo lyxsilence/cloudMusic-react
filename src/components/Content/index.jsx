@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styled from "styled-components";
-import { V_WIDTH, V_MIN_WIDTH, V_CONTAINER_WIDTH} from "../../utils/config"
+import { V_WIDTH, V_MIN_WIDTH, V_CONTAINER_WIDTH} from "@/utils/config"
 import './index.css';
 
 const MWrapper = styled.div`

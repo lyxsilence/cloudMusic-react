@@ -1,8 +1,8 @@
 import React, { memo, useCallback, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { useHistory, withRouter } from 'react-router-dom';
-import { toggleShowLoginBox } from "../../redux/actions";
-import Content from '../../components/Content/index'
+import { toggleShowLoginBox } from "@/redux/actions";
+import Content from '@/components/Content/index'
 
 import './index.css';
 // 用户

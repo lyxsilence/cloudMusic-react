@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 // html
 import Header from '../Header';
 import Footer from '../Footer';
-import Mask from "../../../src/components/Mask";
+import Mask from "@/components/Mask";
 const Layout = (isShowLoginBox) =>{
     return (
         <Router>
